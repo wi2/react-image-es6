@@ -1,0 +1,31 @@
+{
+  "name": "react-image-es6",
+  "version": "0.1.0",
+  "description": "React image with sonicjs canvas preload",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register test.js"
+  },
+  "keywords": [
+    "react",
+    "loading",
+    "image",
+    "sonic",
+    "es6"
+  ],
+  "author": "Mike Wi2 <contact@wi2prod.fr> (http://createur-site.pro/)",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.6.14",
+    "react": "^0.13.3",
+    "react-sonic": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.15",
+    "mocha": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wi2/react-image-es6.git"
+  }
+}
