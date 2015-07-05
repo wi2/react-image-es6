@@ -1,10 +1,11 @@
 {
   "name": "react-image-es6",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React image with sonicjs canvas preload",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register test.js"
+    "test": "npm run prepublish && mocha --compilers js:babel-core/register test.js",
+    "prepublish": "babel src --out-dir dist"
   },
   "keywords": [
     "react",
@@ -22,7 +23,8 @@
   },
   "devDependencies": {
     "babel-core": "^5.6.15",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "node-jsdom": "^3.1.5"
   },
   "repository": {
     "type": "git",

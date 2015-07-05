@@ -19,11 +19,13 @@ export class ReactImg extends React.Component {
     this.forceUpdate();
   }
   componentDidMount() {
-    this.image = new Image();
-    this.image.onload = this.onloadImage.bind(this);
-    this.image.src = this.props.src;
-    this.image.setAttribute("class", this.props.className);
-    this.getDim();
+    if (typeof Image !== "undefined") {
+      this.image = new Image();
+      this.image.onload = this.onloadImage.bind(this);
+      this.image.src = this.props.src;
+      this.image.setAttribute("class", this.props.className);
+      this.getDim();
+    }
   }
   render() {
     if (this.state.loaded)
@@ -31,6 +33,6 @@ export class ReactImg extends React.Component {
     else if (this.state.loading)
       return <ReactArcSonic fillColor="#FF0000" width={this.width} height={this.height} className={this.props.className||''} title={this.props.alt||''} />
     else
-      return <img ref="image" className={this.props.className||''} alt={this.props.alt||''} />
+      return <img ref="image" className={this.props.className||'image'} alt={this.props.alt||''} />
   }
 }
