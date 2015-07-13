@@ -1,9 +1,7 @@
 var React = require('react/addons');
 var TestUtils = React.addons.TestUtils;
 var assert = require('assert');
-
 var ReactImg = require('./index.js').ReactImg;
-console.log(ReactImg);
 
 if (typeof document === 'undefined') {
   var jsdom = require("node-jsdom").jsdom;
@@ -31,11 +29,8 @@ describe('The sonic component', function() {
     });
 
     it('should have a classname equal to "image"', function() {
-      // console.log(TestUtils);
-
       var className = TestUtils.scryRenderedDOMComponentsWithClass(image, 'image')
       assert.equal(className.length, 1);
-      // assert.equal(TestUtils.isDOMComponent(image),1);
     });
 
 

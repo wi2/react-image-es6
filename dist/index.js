@@ -58,7 +58,7 @@ var ReactImg = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      if (this.state.loaded) return _react2['default'].createElement('img', { src: this.props.src, className: this.props.className || '', alt: this.props.alt || '' });else if (this.state.loading) return _react2['default'].createElement(_reactSonic.ReactArcSonic, { fillColor: '#FF0000', width: this.width, height: this.height, className: this.props.className || '', title: this.props.alt || '' });else return _react2['default'].createElement('img', { ref: 'image', className: this.props.className || 'image', alt: this.props.alt || '' });
+      if (this.state.loaded) return _react2['default'].createElement('img', { src: this.props.src, className: this.props.className || '', alt: this.props.alt || '' });else if (this.state.loading) return _react2['default'].createElement(_reactSonic.ReactArcSonic, { fillColor: '#FF0000', width: this.width, height: this.height, className: this.props.className || '', title: this.props.alt || '' });else return _react2['default'].createElement('img', { src: this.props.src, ref: 'image', className: this.props.className || 'image', alt: this.props.alt || '' });
     }
   }]);
 

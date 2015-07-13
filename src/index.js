@@ -33,6 +33,6 @@ export class ReactImg extends React.Component {
     else if (this.state.loading)
       return <ReactArcSonic fillColor="#FF0000" width={this.width} height={this.height} className={this.props.className||''} title={this.props.alt||''} />
     else
-      return <img ref="image" className={this.props.className||'image'} alt={this.props.alt||''} />
+      return <img src={this.props.src} ref="image" className={this.props.className||'image'} alt={this.props.alt||''} />
   }
 }
