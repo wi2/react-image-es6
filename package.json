@@ -1,6 +1,6 @@
 {
   "name": "react-image-es6",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React image with sonicjs canvas preload",
   "main": "index.js",
   "scripts": {
